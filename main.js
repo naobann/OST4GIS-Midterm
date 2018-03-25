@@ -193,7 +193,7 @@ function onEachFeature8(layer) {
 function onEachFeature9(layer){
     layer.bindPopup(layer.feature.properties.Station_Na +
   "in " + layer.feature.properties.County + ", " + layer.feature.properties.State +
-     "is one of the top performers with an Economic Development Index of " + layer.feature.properties.DI
+     "is one of the top performers with an Economic Development Index of " + layer.feature.properties.DI.toFixed(2)
      + ", and a Travel Pattern Change Index of " + layer.feature.properties.TPCI.toFixed(2)).openPopup();
      map.setView([38.917015, -77.029169], 16);
 
